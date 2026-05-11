@@ -82,3 +82,19 @@ const imageLink = ['chocolate.png', 'oatmeal.png', 'peanutbutter.png'];
 const displayImg = document.getElementById('display');
 const cookieContainer = document.querySelector('CookiePET');
 
+//////////////////
+
+const cookiePet = document.querySelector('.CookiePET');
+const customCursor = document.querySelector('.custom-cursor');
+
+// 1. Tracks movement and displays the hand GIF while inside the CookiePET box
+cookiePet.addEventListener('mousemove', (e) => {
+  customCursor.style.display = 'block';
+  customCursor.style.left = e.clientX + 'px';
+  customCursor.style.top = e.clientY + 'px';
+});
+
+// 2. Instantly hides the hand GIF the moment the mouse exits the CookiePET box
+cookiePet.addEventListener('mouseleave', () => {
+  customCursor.style.display = 'none';
+});
