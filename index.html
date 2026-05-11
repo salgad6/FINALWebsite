@@ -3,7 +3,8 @@
 <html lang="en">
 <head>
     <title>Introduction to Cookies</title>
-    <link rel="" href="main.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="icon" type="image/x-icon" href="chocolate.png">
     <script src="main.js" defer></script>
     <meta charset="UTF-8">
 </head>
@@ -11,24 +12,34 @@
 <div class="container">
     <nav class="navbar">
         <ul>
-            <li><a href="home.html">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="pg1.html"> What is a Cookie?</a></li>
+            <li><a href="pg2.html"> What is a Cookie?</a></li>
+            <li><a href="pg3.html"> What is a Cookie?</a></li>
+            <li><a href="pg4.html"> What is a Cookie?</a></li>
+            <li><a href="pg5.html"> What is a Cookie?</a></li>
+            <li><a href="pg6.html"> What is a Cookie?</a></li>
         </ul>
     </nav>
     <main>
-        <header>
+        <h1>
             <b>INTRODUCTION</b>
-        </header>
+        </h1>
         <body>
-            TEXT
+            <p>Internet Cookies are small bits of information stored on a user’s computer during and/or in between sessions, 
+                generally for the purpose of website functionality and advertising. Cookies have been discussed as a potential 
+                security risk with the data that they store being potentially sensitive and able to be used against users, 
+                creating several ethical issues surrounding internet privacy and user rights.</p>
         </body>
-        <!--Button to First Page, be sure to explain how to use the navigation bar.-->
-        <!--button id="CREATE" onclick="setCookie(1, 12, 15);"> START</button-->
-        <!--button id="CREATE" onclick="checkCookie();"> END</button-->
-        <!--button id="PopUp" onclick="doPopUP();"> TEXT</button-->
-        <button id="PopUp" onclick="enableCookies();"> Enable</button>
-        <button id="cookie" onclick="cookieTest();"> cookietest</button>
+        <button id="PopUp" onclick="cookieTest();"> Enable Cookies?</button>
+        <button id="CREATE" onclick="CookiePetCREATE();"> Click here for a new friend :3</button>
+        
+        <CookiePET><img id="display" src=" " alt="Cookie Type"></CookiePET>
+            
         <script>
+            document.cookie = "aCookie=Cookie1";
+            console.log(document.cookie);
+            document.cookie = "aCookie=Cookie1; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/";
             console.log(document.cookie);
         </script>
         <!--Don't forget to add aria labels to the buttons-->

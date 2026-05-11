@@ -1,8 +1,41 @@
-//import Cookies from "js-cookie";
-//import { createRoot } from 'react-dom/client';
+//Allow Cookies?
+function enableCookies() {
+  cookieAdd()
+}
 
-function setCookie(cname, cvalue) {
-  document.cookie = cname + "=" + cvalue + ";path=/";
+function cookieAdd(name){
+  document.cookie = "name"
+}
+
+function removeCookies() {
+
+}
+
+function cookieTest() {
+    document.cookie = "aCookie=Cookie1";
+  //console.log(document.cookie);
+  //document.cookie = "aCookie=Cookie1"; "expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/";
+  //console.log(document.cookie);
+
+    console.log("Step 1: All cookies:", document.cookie);
+
+    // Step 2: Try to get the cookie
+    console.log("Step 2: Value of aCookie:", getCookie("aCookie"));
+
+    // Step 3: Set expired cookie
+    document.cookie = "aCookie=Cookie1; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/";
+
+    console.log("Step 3: All cookies after expired set:", document.cookie);
+
+    // Step 4: Check again
+    console.log("Step 4: Value of aCookie after expired set:", getCookie("aCookie"));
+}
+
+function setCookie(cname, cvalue, exdays) {
+  const d = new Date();
+  d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+  let expires = "expires="+d.toUTCString();
+  document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
 }
 
 function getCookie(cname) {
@@ -32,39 +65,20 @@ function checkCookie() {
   }
 }
 
-//Button MasterList
-function doPopUP() {
-    alert("HI");
+function CookiePetCREATE() {
+  //let PETNAME = getCookie("username")
+  //make the user give it a name
+  cookieContainer.style.display = 'block';
+  const randomIndex = Math.floor(Math.random() * imageLink.length);
+  displayImg.src = imageLink[randomIndex];
+
+
 }
 
-//Time Start
-function timeStart() {
-    document.cookie = "startTime=0; path=/";
-}
 
-//Time End
-function timeEnd() {
-    //let RETURN = document.cookie
-    //console.log(RETURN)
-    
-}
 
-//Allow Cookies?
-function enableCookies() {
-  timeStart()
-  timeEnd()
-}
 
-function cookieTest() {
-  let RETURN = console.log(document.cookie);
-  //create
-  alert(RETURN)
-  document.cookie = "aCookie=Cookie1";
-  //check
-  console.log(document.cookie);
-  //destroy
-}
-
-//Cookies.set("name", "value", {expires:7})
-//const name = Cookies.get("name");
+const imageLink = ['chocolate.png', 'oatmeal.png', 'peanutbutter.png'];
+const displayImg = document.getElementById('display');
+const cookieContainer = document.querySelector('CookiePET');
 

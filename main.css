@@ -1,0 +1,34 @@
+CookiePET {
+    display: none;
+     /* Allows it to have width/height/padding */
+    width: 250px;          /* Set a fixed size */
+    height: 250px;
+    border-radius: 50%;
+    overflow: hidden;      /* Crops the image into a circle */
+    /*border: 5px solid #f0e68c; /* Optional: adds a "cookie" colored border */
+}
+
+#display {
+    /*display: block;        Removes weird gaps at the bottom of the image */
+    width: 100%;          /* Set a specific size for your cookie */
+    height: 100%;
+    object-fit: cover;     /* Prevents the image from stretching */
+}
+
+
+h1 {
+    color: hotpink;
+}
+
+h2 {
+    color: magenta;
+}
+
+body {
+    color: blue;
+    font-size: large;
+}
+
+nav {
+    color: red;
+}
