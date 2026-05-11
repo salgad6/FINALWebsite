@@ -84,17 +84,23 @@ const cookieContainer = document.querySelector('CookiePET');
 
 //////////////////
 
-const cookiePet = document.querySelector('.CookiePET');
-const customCursor = document.querySelector('.custom-cursor');
+document.addEventListener('DOMContentLoaded', () => {
+  const cookiePet = document.querySelector('#CookiePET');
+  const customCursor = document.querySelector('.custom-cursor');
 
-// 1. Tracks movement and displays the hand GIF while inside the CookiePET box
-cookiePet.addEventListener('mousemove', (e) => {
-  customCursor.style.display = 'block';
-  customCursor.style.left = e.clientX + 'px';
-  customCursor.style.top = e.clientY + 'px';
-});
+  // Verify elements are found in your browser console
+  if (!cookiePet || !customCursor) {
+    console.error("Cursor tracking error: Missing #CookiePET or .custom-cursor elements in HTML.");
+    return;
+  }
 
-// 2. Instantly hides the hand GIF the moment the mouse exits the CookiePET box
-cookiePet.addEventListener('mouseleave', () => {
-  customCursor.style.display = 'none';
+  cookiePet.addEventListener('mousemove', (e) => {
+    customCursor.style.display = 'block';
+    customCursor.style.left = e.clientX + 'px';
+    customCursor.style.top = e.clientY + 'px';
+  });
+
+  cookiePet.addEventListener('mouseleave', () => {
+    customCursor.style.display = 'none';
+  });
 });
