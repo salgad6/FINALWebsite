@@ -26,7 +26,7 @@ CookiePET {
     object-fit: cover;     /* Prevents the image from stretching */
 }
 
-CookiePET:hover {
+CookiePET:hover #display{
   /* Start the shake animation and make the animation last for 0.5 seconds */
   cursor:none;
   animation: shake 1s;
