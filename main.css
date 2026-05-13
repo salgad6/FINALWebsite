@@ -1,3 +1,10 @@
+.sticky-element {
+  position: fixed; /* Pins the element to the viewport */
+  bottom: 20px;    /* 20px up from the bottom edge */
+  right: 20px;     /* 20px from the right edge */
+  z-index: 1000;   /* Keeps it on top of other content */
+}
+
 CookiePET {
     display: none;
      /* Allows it to have width/height/padding */
