@@ -1,15 +1,18 @@
 .sticky-element {
-  position: fixed; /* Pins the element to the viewport */
-  bottom: 20px;    /* 20px up from the bottom edge */
-  right: 20px;     /* 20px from the right edge */
+  bottom: 1rem;       /* Uses scaling font-size units instead of rigid pixels */
+  right: 1rem;        /* Keeps consistent spacing on all screens */
+  width: 15vw;        /* Scales fluidly based on viewport width */
+  max-width: 80px;    /* Caps size so it never looks massive on desktop */
+  min-width: 45px;    /* Prevents it from shrinking too small on tiny phones */
+  height: auto;  
   z-index: 1000;   /* Keeps it on top of other content */
 }
 
 CookiePET {
     display: none;
      /* Allows it to have width/height/padding */
-    width: 250px;          /* Set a fixed size */
-    height: 250px;
+    width: 1vw;          /* Set a fixed size */
+    height: 15vh;
     border-radius: 50%;
     overflow: hidden;      /* Crops the image into a circle */
     /*border: 5px solid #f0e68c; /* Optional: adds a "cookie" colored border */
