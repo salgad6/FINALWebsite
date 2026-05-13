@@ -1,4 +1,5 @@
 .sticky-element {
+  position: fixed;
   bottom: 1rem;       /* Uses scaling font-size units instead of rigid pixels */
   right: 1rem;        /* Keeps consistent spacing on all screens */
   width: 15vw;        /* Scales fluidly based on viewport width */
@@ -11,8 +12,8 @@
 CookiePET {
     display: none;
      /* Allows it to have width/height/padding */
-    width: 1vw;          /* Set a fixed size */
-    height: 15vh;
+    width: 100%;          /* Set a fixed size */
+    height: 100%;
     border-radius: 50%;
     overflow: hidden;      /* Crops the image into a circle */
     /*border: 5px solid #f0e68c; /* Optional: adds a "cookie" colored border */
@@ -21,7 +22,7 @@ CookiePET {
 #display {
     /*display: block;        Removes weird gaps at the bottom of the image */
     width: 100%;          /* Set a specific size for your cookie */
-    height: 100%;
+    height: auto;
     object-fit: cover;     /* Prevents the image from stretching */
 }
 
