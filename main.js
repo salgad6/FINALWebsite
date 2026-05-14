@@ -62,7 +62,18 @@ function CookiePetCREATE() {
   cookieContainer.style.display = 'block';
   const randomIndex = Math.floor(Math.random() * imageLink.length);
   displayImg.src = imageLink[randomIndex];
-  document.cookie = "cookie:CREATED";
+
+
+  const now = new Date();
+
+  // Create a date object for midnight tonight
+  const midnight = new Date(now.getFullYear(), now.getMonth(), now.getDate() + 1, 0, 0, 0);
+
+  // Calculate the difference in seconds
+  const secondsUntilTomorrow = Math.floor((midnight - now) / 1000);
+
+  // Set the cookie with the calculated max-age
+  document.cookie = "cookie=CREATED; path=/; max-age=${secondsUntilTomorrow}";
 }
 
 
