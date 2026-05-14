@@ -49,7 +49,7 @@ function checkCookie() {
   if (COOKIE != "") {
     //alert("Welcome again " + COOKIE);
     cookieContainer.style.display = 'block';
-    displayImg.src = CookieType;
+    displayImg.src = COOKIE;
   }
 }
 
