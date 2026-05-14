@@ -47,7 +47,9 @@ function getCookie(cname) {
 function checkCookie() {
   let COOKIE = getCookie("cookie");
   if (COOKIE != "") {
-    alert("Welcome again " + COOKIE);
+    //alert("Welcome again " + COOKIE);
+    cookieContainer.style.display = 'block';
+    displayImg.src = CookieType;
   }
 }
 
@@ -56,11 +58,15 @@ function CookiePetCREATE() {
   //make the user give it a name
   cookieContainer.style.display = 'block';
   const randomIndex = Math.floor(Math.random() * imageLink.length);
-  displayImg.src = imageLink[randomIndex];
+  const SAVED = imageLink[randomIndex];
+  
+  displayImg.src = SAVED;
+  
+  
+  const cookieType = encodeURIComponent(SAVED);
 
-
+  
   const now = new Date();
-
   // Create a date object for midnight tonight
   const midnight = new Date(now.getFullYear(), now.getMonth(), now.getDate() + 1, 0, 0, 0);
 
@@ -68,7 +74,7 @@ function CookiePetCREATE() {
   const secondsUntilTomorrow = Math.floor((midnight - now) / 1000);
 
   // Set the cookie with the calculated max-age
-  document.cookie = "cookie=CREATED; path=/; max-age=${secondsUntilTomorrow}";
+  document.cookie = `cookie=${cookieType}; path=/; max-age=${secondsUntilTomorrow}`;
   console.log(document.cookie)
 }
 
