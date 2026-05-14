@@ -46,7 +46,11 @@ Current lawsuit for Jet Blue for supposedly utilizing user cookie data for what 
 
         </body>
         <!--Button to First Page, be sure to explain how to use the navigation bar.-->
-        <input id="click" type="button" value="cname" onclick="doPopUP();" />
+        <script>
+            window.addEventListener("DOMContentLoaded", () => {
+            checkCookie();
+            });
+        </script>
     </main>
 </div>
 </body>
