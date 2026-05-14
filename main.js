@@ -45,14 +45,9 @@ function getCookie(cname) {
 }
 
 function checkCookie() {
-  let user = getCookie("username");
-  if (user != "") {
-    alert("Welcome again " + user);
-  } else {
-    user = prompt("Please enter your name:", "");
-    if (user != "" && user != null) {
-      setCookie("username", user, 365);
-    }
+  let COOKIE = getCookie("cookie");
+  if (COOKIE != "") {
+    alert("Welcome again " + COOKIE);
   }
 }
 
@@ -74,6 +69,7 @@ function CookiePetCREATE() {
 
   // Set the cookie with the calculated max-age
   document.cookie = "cookie=CREATED; path=/; max-age=${secondsUntilTomorrow}";
+  console.log(document.cookie)
 }
 
 
