@@ -3,8 +3,8 @@
   bottom: 1rem;       /* Uses scaling font-size units instead of rigid pixels */
   right: 1rem;        /* Keeps consistent spacing on all screens */
   width: 15vw;        /* Scales fluidly based on viewport width */
-  max-width: 80px;    /* Caps size so it never looks massive on desktop */
-  min-width: 45px;    /* Prevents it from shrinking too small on tiny phones */
+  max-width: 150px;    /* Caps size so it never looks massive on desktop */
+  min-width: 100px;    /* Prevents it from shrinking too small on tiny phones */
   height: auto;  
   z-index: 1000;   /* Keeps it on top of other content */
 }
