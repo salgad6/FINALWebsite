@@ -71,8 +71,7 @@ function CookiePetCREATE() {
   cookieContainer.style.display = 'block';
   const randomIndex = Math.floor(Math.random() * imageLink.length);
   displayImg.src = imageLink[randomIndex];
-
-
+  document.cookie = "cookie:CREATED";
 }
 
 
