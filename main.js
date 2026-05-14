@@ -50,6 +50,7 @@ function checkCookie() {
     //alert("Welcome again " + COOKIE);
     cookieContainer.style.display = 'block';
     displayImg.src = COOKIE;
+    //new line test
   }
 }
 
