@@ -7,26 +7,17 @@ function cookieAdd(name){
   document.cookie = "name"
 }
 
-function removeCookies() {
-
-}
-
 function cookieTest() {
     document.cookie = "aCookie=Cookie1";
   //console.log(document.cookie);
   //document.cookie = "aCookie=Cookie1"; "expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/";
   //console.log(document.cookie);
-
     console.log("Step 1: All cookies:", document.cookie);
-
     // Step 2: Try to get the cookie
     console.log("Step 2: Value of aCookie:", getCookie("aCookie"));
-
     // Step 3: Set expired cookie
     document.cookie = "aCookie=Cookie1; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/";
-
     console.log("Step 3: All cookies after expired set:", document.cookie);
-
     // Step 4: Check again
     console.log("Step 4: Value of aCookie after expired set:", getCookie("aCookie"));
 }
