@@ -92,6 +92,7 @@ nav ul {
         }
 
 li a {
+  font-size: small;
   display: block;
   color: black;
   padding: 1rem 1.5rem;
@@ -100,6 +101,7 @@ li a {
 
 /* Change the link and background color on hover */
 li a:hover {
+  font-size: medium;
   background-color: black;
   color: white;
 }
