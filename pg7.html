@@ -34,6 +34,8 @@
       <!--Button to First Page, be sure to explain how to use the navigation bar.-->
         <script>
             window.addEventListener("DOMContentLoaded", () => {
+            //original check...
+            checkCookie();
               let COOKIE = getCookie("cookie");
               if (COOKIE == "") {
                 cookieContainer.style.display = 'block';
