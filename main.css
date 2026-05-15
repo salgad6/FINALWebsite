@@ -51,7 +51,9 @@ CookiePET:hover #display{
 
 
 
-
+/*container {
+  
+}*/
 
 h1 {
     color: hotpink;
@@ -61,7 +63,7 @@ h2 {
     color: magenta;
 }
 
-p {
+/*p {
     margin-top: 2rem;
     margin-bottom: 1rem;
     margin-right: 1rem;
@@ -69,7 +71,7 @@ p {
     color: blue;
     font-size: large;
     cursor:auto;
-}
+} */
 
 body {
     margin-left: 0rem;
