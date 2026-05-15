@@ -58,7 +58,7 @@ function checkCookie() {
 
       //update
   //}
-  }
+  //}
 }
 
 function CookiePetCREATE() {
