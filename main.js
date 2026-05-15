@@ -115,3 +115,7 @@ document.addEventListener('DOMContentLoaded', () => {
     customCursor.style.display = 'none';
   });
 });
+
+function ShowCredits() {
+  CREDITS.style.display = "block";
+}
