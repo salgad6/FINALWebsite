@@ -56,6 +56,7 @@ function checkCookie() {
     if (on_index != true) {
       displayImg.src = "grave.png";
   }
+  }
 }
 
 function CookiePetCREATE() {
