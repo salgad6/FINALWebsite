@@ -62,7 +62,6 @@ p {
     margin-bottom: 1rem;
     margin-right: 1rem;
     margin-left: 1rem;
-    color: blue;
     font-size: large;
     cursor:auto;
 }
@@ -96,7 +95,7 @@ li a {
   font-size: small;
   display: block;
   color: black;
-  padding: 1rem 1.5rem;
+  padding: 1rem 1rem;
   text-decoration: none;
 }
 
