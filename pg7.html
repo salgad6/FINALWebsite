@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <title>Introduction to Cookies</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="icon" type="image/x-icon" href="chocolate.png">
+    <script src="main.js" defer></script>
+    <meta charset="UTF-8">
+</head>
+<body>
+<div class="container">
+    <nav class="navbar">
+            <ul style="list-style-type: none;">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="pg1.html"> What is a Cookie?</a></li>
+            <li><a href="pg2.html"> Are they Dangerous?</a></li>
+            <li><a href="pg3.html"> What would a Cookieless world look like?</a></li>
+            <li><a href="pg4.html"> What would a Cookie-less world look like?</a></li>
+            <li><a href="pg5.html"> Cookies the European Way</a></li>
+            <li><a href="pg6.html"> Conclusions</a></li>
+            <li><a href="pg7.html"> Removing Cookies</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>
+            <b>Removing Cookies</b>
+        </h1>
+        <h2><b>Say goodbye to your friend :((</b></h2>
+      <p>So. You might be wondering... "How can I protect myself?" Luckily, for the majority of cookies, you can remove them just by clearing your cache.</p>
+      <h2>Just a warning, this will sign you out of everything, clear your shopping carts, etc. It can be helpful to look at a fresh browser without any tracking cookies (Thanks, Google.)</h2>  
+      <p>If you're on google, you should see two circles and bars near the URL of this webpage... Go to Cookies and Site Data</p>
+      <p>And now you can clear the cookies on just this page!</p>
+      <!--Button to First Page, be sure to explain how to use the navigation bar.-->
+        <script>
+            window.addEventListener("DOMContentLoaded", () => {
+              let COOKIE = getCookie("cookie");
+              if (COOKIE == "") {
+                cookieContainer.style.display = 'block';
+                displayImg.src = grave.png;
+  }
+            });
+        </script>
+        <CookiePET><img id="display" src=" " alt="Cookie Type" class="sticky-element"></CookiePET>
+    </main>
+</div>
+</body>
+
+</html>
