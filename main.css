@@ -72,7 +72,8 @@ p {
 }
 
 body {
-    margin: 0rem;
+    margin-left: 0rem;
+    margin-right: 10%
     padding: 0rem;
 }
 
