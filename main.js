@@ -52,12 +52,12 @@ function checkCookie() {
     displayImg.src = COOKIE;
     //new line test
   }
-  else {
-    if (on_index != true) {
-      displayImg.src = "grave.png";
+  //else {
+    //if (on_index != true) {
+      //displayImg.src = "grave.png";
 
       //update
-  }
+  //}
   }
 }
 
