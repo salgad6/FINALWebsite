@@ -68,9 +68,10 @@ p {
 }
 
 body {
-    margin-left: 0%;
+    margin-left: 10%;
     margin-top: 0%;
-    margin-right: 10%
+    margin-right: 10%;
+    margin-bottom: 10%;
     padding: 0rem;
 }
 
