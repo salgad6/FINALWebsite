@@ -72,15 +72,15 @@ p {
 }
 
 body {
-    margin: 0;
-    padding: 0;
+    margin: 1rem;
+    padding: 1rem;
 }
 
 ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  width: 100px;
+  width: 15%;
   background-color: green;
   height: 100%; /* Full height */
   position: fixed; /* Make it stick, even on scroll */
